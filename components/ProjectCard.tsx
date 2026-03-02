@@ -46,7 +46,7 @@ export default function ProjectCard(props: ProjectCardProps) {
               </h3>
 
               {props.description && (
-                <p className="text-secondary text-sm mb-2 line-clamp-3 text-justify">
+                <p className="text-secondary text-sm mb-2 line-clamp-3">
                   {props.description}
                 </p>
               )}
