@@ -79,7 +79,7 @@ export default function ProjectCard(props: ProjectCardProps) {
                   href={props.github}
                   target="_blank"
                   rel="noopener noreferrer"
-                  onClick={(e) => e.stopPropagation()}
+                  onClick={(e: React.MouseEvent) => e.stopPropagation()}
                   className="text-primary text-sm font-medium hover:underline"
                 >
                   GitHub
@@ -91,7 +91,7 @@ export default function ProjectCard(props: ProjectCardProps) {
                   href={props.liveDemo}
                   target="_blank"
                   rel="noopener noreferrer"
-                  onClick={(e) => e.stopPropagation()}
+                  onClick={(e: React.MouseEvent) => e.stopPropagation()}
                   className="text-primary text-sm font-medium hover:underline"
                 >
                   Live Demo
