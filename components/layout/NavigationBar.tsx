@@ -19,7 +19,7 @@ export default function Header() {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
-  const navItems = ["Home", "Certificates", "Projects", "Skills"];
+  const navItems = ["Home", "Projects", "Certificates", "Skills"];
 
   return (
     <>

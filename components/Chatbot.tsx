@@ -25,13 +25,25 @@ export default function Chatbot() {
 
   const messagesEndRef = useRef<HTMLDivElement | null>(null);
 
-
-  // LOAD LOCAL STORAGE
-
   useEffect(() => {
     const storedMessages = localStorage.getItem("chat_messages");
+
+    const welcomeMessage: Message = {
+      text: "Hai 👋\nAku asisten virtual Muhammad Hidayat Mauluddin.\nMau tahu tentang pengalaman, skill, atau project beliau? Tanya saja ya 😊",
+      isUser: false,
+    };
     if (storedMessages) {
-      setMessages(JSON.parse(storedMessages));
+      const parsed = JSON.parse(storedMessages);
+
+      if (parsed.length > 0) {
+        setMessages(parsed);
+      } else {
+        setIsOpen(true);
+        setMessages([welcomeMessage]);
+      }
+    } else {
+      setIsOpen(true);
+      setMessages([welcomeMessage]);
     }
     setIsLoaded(true);
   }, []);
@@ -48,7 +60,6 @@ export default function Chatbot() {
     messagesEndRef.current?.scrollIntoView({ behavior: "smooth" });
   }, [messages, loading]);
 
-
   // FETCH FAQ
 
   useEffect(() => {
@@ -64,7 +75,6 @@ export default function Chatbot() {
 
     fetchFaq();
   }, [CHATBOT_API_URL]);
-
 
   // SEND MESSAGE (REUSABLE)
 
@@ -152,7 +162,7 @@ export default function Chatbot() {
           {/* CHAT AREA */}
           <div className="h-80 overflow-y-auto p-3 space-y-3">
             {/* QUICK QUESTIONS */}
-            {faqs.length > 0 && (
+            {faqs.length > 0 && messages.length <= 1 && (
               <div className="flex flex-wrap gap-1.5 mb-3">
                 {faqs.slice(0, 4).map((faq, i) => (
                   <button

@@ -20,8 +20,8 @@ export default function Home() {
       />
       <NavigationBar />
       <HeroSection />
-      <CertificatesSection />
       <ProjectsSection />
+      <CertificatesSection />
       <SkillsSection />
       <Chatbot />
     </main>
