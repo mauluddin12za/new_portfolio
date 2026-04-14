@@ -12,7 +12,10 @@ type ProjectCardProps = {
   description?: string;
   techStack?: string[];
   image?: string;
-  github?: string;
+  github?: {
+    label: string;
+    url: string;
+  }[];
   liveDemo?: string;
 };
 
@@ -73,19 +76,28 @@ export default function ProjectCard(props: ProjectCardProps) {
               >
                 View Details
               </button>
+              {props.github && props.github.length > 0 && (
+                <div className="relative group">
+                  <button className="text-primary text-sm font-medium hover:underline">
+                    GitHub ▴
+                  </button>
 
-              {props.github && (
-                <Link
-                  href={props.github}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  onClick={(e: React.MouseEvent) => e.stopPropagation()}
-                  className="text-primary text-sm font-medium hover:underline"
-                >
-                  GitHub
-                </Link>
+                  <div className="absolute bottom-full mb-2 w-36 bg-card border border-secondary/20 rounded-md shadow-lg opacity-0 group-hover:opacity-100 invisible group-hover:visible transition-all duration-200 z-10">
+                    {props.github.map((repo) => (
+                      <Link
+                        key={repo.url}
+                        href={repo.url}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        onClick={(e: React.MouseEvent) => e.stopPropagation()}
+                        className="block px-4 py-2 text-sm text-white bg-surface hover:bg-background transition"
+                      >
+                        {repo.label}
+                      </Link>
+                    ))}
+                  </div>
+                </div>
               )}
-
               {props.liveDemo && (
                 <Link
                   href={props.liveDemo}

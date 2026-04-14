@@ -6,7 +6,10 @@ type ProjectDetailProps = {
   description?: string;
   techStack?: string[];
   image?: string;
-  github?: string;
+  github?: {
+    label: string;
+    url: string;
+  }[];
   liveDemo?: string;
 };
 
@@ -37,9 +40,7 @@ export default function ProjectDetail({
       {/* INFO */}
       <div className="mt-5 flex flex-col justify-between flex-1">
         <div>
-          <h3 className="text-white font-semibold text-lg mb-2">
-            {title}
-          </h3>
+          <h3 className="text-white font-semibold text-lg mb-2">{title}</h3>
 
           {description && (
             <p className="text-secondary text-sm mb-2 text-justify">
@@ -63,16 +64,21 @@ export default function ProjectDetail({
 
         {/* ACTIONS */}
         <div className="flex gap-4 items-center border-t border-secondary/20 pt-4 mt-4 ">
-          {github && (
-            <Link
-              href={github}
-              target="_blank"
-              rel="noopener noreferrer"
-              onClick={(e) => e.stopPropagation()}
-              className="text-primary text-sm font-medium hover:underline"
-            >
-              GitHub
-            </Link>
+          {github && github.length > 0 && (
+            <>
+              {github?.map((repo) => (
+                <Link
+                  key={repo.url}
+                  href={repo.url}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  onClick={(e: React.MouseEvent) => e.stopPropagation()}
+                  className="text-primary text-sm font-medium hover:underline"
+                >
+                  {repo.label}
+                </Link>
+              ))}
+            </>
           )}
 
           {liveDemo && (

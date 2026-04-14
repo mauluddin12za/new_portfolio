@@ -5,7 +5,16 @@ export const projects = [
       "I developed a full-stack, location-based attendance system for FKIP with role-based access control, location validation for accurate attendance tracking, and full CRUD functionality, allowing seamless management of users and attendance records.",
     techStack: ["Next.js", "Express Js", "MySql"],
     image: "/images/projects/attendance_pwa.png",
-    github: "https://github.com/mauluddin12z/frontend-attendance-app-fkip-unsri",
+    github: [
+      {
+        label: "Frontend",
+        url: "https://github.com/mauluddin12z/frontend-attendance-app-fkip-unsri",
+      },
+      {
+        label: "Backend",
+        url: "https://github.com/mauluddin12z/backend-attendance-app-fkip-unsri",
+      },
+    ],
     liveDemo: "https://attendance-pwa.hidayatmauluddin.my.id",
   },
   {
@@ -14,7 +23,16 @@ export const projects = [
       "Created an e-commerce website with an admin dashboard to manage products and content, improving online visibility for a furniture store.",
     techStack: ["Next.js", "Express Js", "MySql"],
     image: "/images/projects/hambali_furniture.png",
-    github: "https://github.com/mauluddin12z/HAMBALI-FURNITURE-WEB-FRONTEND",
+    github: [
+      {
+        label: "Frontend",
+        url: "https://github.com/mauluddin12z/HAMBALI-FURNITURE-WEB-FRONTEND",
+      },
+      {
+        label: "Backend",
+        url: "https://github.com/mauluddin12z/HAMBALI-FURNITURE-WEB-BACKEND",
+      },
+    ],
     liveDemo: "https://hambali-furniture.hidayatmauluddin.my.id",
   },
   {
@@ -23,7 +41,16 @@ export const projects = [
       "Developed a POS web application that streamlined ordering and transaction processes for a local restaurant.",
     techStack: ["Next.js", "Express Js", "MySql"],
     image: "/images/projects/pos_warung19.png",
-    github: "https://github.com/mauluddin12z/POS_RESTO19_FRONTEND",
+    github: [
+      {
+        label: "Frontend",
+        url: "https://github.com/mauluddin12z/POS_RESTO19_FRONTEND",
+      },
+      {
+        label: "Backend",
+        url: "https://github.com/mauluddin12z/POS_RESTO19_BACKEND",
+      },
+    ],
     liveDemo: "https://pos-resto.hidayatmauluddin.my.id",
   },
   {
@@ -32,7 +59,12 @@ export const projects = [
       "Built a product catalog website with admin features for product and content management, enabling digital product showcasing.",
     techStack: ["Codeigniter 13", "MySql"],
     image: "/images/projects/isuzu_sumsel.png",
-    github: "https://github.com/mauluddin12z/website-for-isuzu-sales-person",
+    github: [
+      {
+        label: "Frontend",
+        url: "https://github.com/mauluddin12z/website-for-isuzu-sales-person",
+      },
+    ],
     liveDemo: "https://isuzu-sumsel.hidayatmauluddin.my.id",
   },
   {
@@ -41,7 +73,12 @@ export const projects = [
       "Implemented an inventory management system for the Faculty of Teacher Training and Education, improving data recording and reporting processes.",
     techStack: ["Codeigniter 13", "MySql"],
     image: "/images/projects/sipb_fkip.png",
-    github: "https://github.com/mauluddin12z/SISTEM-INFORMASI-PERSEDIAAN-BARANG",
+    github: [
+      {
+        label: "Frontend",
+        url: "https://github.com/mauluddin12z/SISTEM-INFORMASI-PERSEDIAAN-BARANG",
+      },
+    ],
     liveDemo: "https://sipb-fkip.hidayatmauluddin.my.id",
   },
 ];
