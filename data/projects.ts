@@ -100,7 +100,7 @@ export const projects = [
       liveDemo: "https://score-tracker.hidayatmauluddin.my.id",
    },
    {
-      title: "Store Finder",
+      title: "UI/UX - Store Finder",
       description:
          "StoreFinder is a website specifically designed to assist users in finding stores based on their location. This site provides information about various stores with a wide range of product options and makes it easy for users to discover stores that match their needs.",
       techStack: ["Vite React"],
@@ -115,6 +115,6 @@ export const projects = [
             url: "https://uxdesigner-portfolio-hidayat-mauluddin.vercel.app/casestudy/store-finder-web-responsive-design",
          },
       ],
-      liveDemo: "https://store-finder-six.vercel.app/",
+      liveDemo: "https://store-finder.hidayatmauluddin.my.id",
    },
 ];
