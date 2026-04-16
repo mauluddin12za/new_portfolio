@@ -33,7 +33,7 @@ export default function ProjectsSection() {
               description={project.description}
               techStack={project.techStack}
               image={project.image}
-              github={project.github}
+              links={project.links}
               liveDemo={project.liveDemo}
             />
           ))}

@@ -5,7 +5,7 @@ export const projects = [
          "I developed a full-stack, location-based attendance system for FKIP with role-based access control, location validation for accurate attendance tracking, and full CRUD functionality, allowing seamless management of users and attendance records.",
       techStack: ["Next.js", "Express Js", "MySql"],
       image: "/images/projects/attendance_pwa.png",
-      github: [
+      links: [
          {
             label: "Frontend",
             url: "https://github.com/mauluddin12z/frontend-attendance-app-fkip-unsri",
@@ -23,7 +23,7 @@ export const projects = [
          "Created an e-commerce website with an admin dashboard to manage products and content, improving online visibility for a furniture store.",
       techStack: ["Next.js", "Express Js", "MySql"],
       image: "/images/projects/hambali_furniture.png",
-      github: [
+      links: [
          {
             label: "Frontend",
             url: "https://github.com/mauluddin12z/HAMBALI-FURNITURE-WEB-FRONTEND",
@@ -41,7 +41,7 @@ export const projects = [
          "Developed a POS web application that streamlined ordering and transaction processes for a local restaurant.",
       techStack: ["Next.js", "Express Js", "MySql"],
       image: "/images/projects/pos_warung19.png",
-      github: [
+      links: [
          {
             label: "Frontend",
             url: "https://github.com/mauluddin12z/POS_RESTO19_FRONTEND",
@@ -59,7 +59,7 @@ export const projects = [
          "Built a product catalog website with admin features for product and content management, enabling digital product showcasing.",
       techStack: ["Codeigniter 13", "MySql"],
       image: "/images/projects/isuzu_sumsel.png",
-      github: [
+      links: [
          {
             label: "Fullstack",
             url: "https://github.com/mauluddin12z/website-for-isuzu-sales-person",
@@ -73,7 +73,7 @@ export const projects = [
          "Implemented an inventory management system for the Faculty of Teacher Training and Education, improving data recording and reporting processes.",
       techStack: ["Codeigniter 13", "MySql"],
       image: "/images/projects/sipb_fkip.png",
-      github: [
+      links: [
          {
             label: "Fullstack",
             url: "https://github.com/mauluddin12z/SISTEM-INFORMASI-PERSEDIAAN-BARANG",
@@ -87,7 +87,7 @@ export const projects = [
          "This project is a digital system designed to record, manage, and analyze student academic scores across different subjects and assessments. It enables teachers or administrators to input student grades, automatically calculate summaries such as averages, rankings, and performance trends, and generate meaningful insights about each student’s academic progress. The system aims to simplify academic monitoring by replacing manual record-keeping with an organized and efficient platform. It provides visual reports such as charts and dashboards to help identify high-performing students, students who need additional support, and overall class performance trends. Key features include secure student data management, score entry and updates, performance analytics, and report generation. This project helps educators make data-driven decisions to improve teaching strategies and enhance student learning outcomes.",
       techStack: ["Vite React", "Express Js", "MySql"],
       image: "/images/projects/score_tracker.png",
-      github: [
+      links: [
          {
             label: "Frontend",
             url: "https://github.com/mauluddin12z/performance-analysis-frontend",
@@ -98,5 +98,23 @@ export const projects = [
          },
       ],
       liveDemo: "https://score-tracker.hidayatmauluddin.my.id",
+   },
+   {
+      title: "Store Finder",
+      description:
+         "StoreFinder is a website specifically designed to assist users in finding stores based on their location. This site provides information about various stores with a wide range of product options and makes it easy for users to discover stores that match their needs.",
+      techStack: ["Vite React"],
+      image: "/images/projects/storefindercover.png",
+      links: [
+         {
+            label: "Frontend",
+            url: "https://github.com/mauluddin12z/store-finder",
+         },
+         {
+            label: "Case Study",
+            url: "https://uxdesigner-portfolio-hidayat-mauluddin.vercel.app/casestudy/store-finder-web-responsive-design",
+         },
+      ],
+      liveDemo: "https://store-finder-six.vercel.app/",
    },
 ];

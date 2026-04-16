@@ -12,7 +12,7 @@ type ProjectCardProps = {
   description?: string;
   techStack?: string[];
   image?: string;
-  github?: {
+  links?: {
     label: string;
     url: string;
   }[];
@@ -76,14 +76,14 @@ export default function ProjectCard(props: ProjectCardProps) {
               >
                 View Details
               </button>
-              {props.github && props.github.length > 0 && (
+              {props.links && props.links.length > 0 && (
                 <div className="relative group">
                   <button className="text-primary text-sm font-medium hover:underline">
-                    GitHub ▴
+                    Links ▴
                   </button>
 
-                  <div className="absolute bottom-full mb-2 w-36 bg-card border border-secondary/20 rounded-md shadow-lg opacity-0 group-hover:opacity-100 invisible group-hover:visible transition-all duration-200 z-10">
-                    {props.github.map((repo) => (
+                  <div className="absolute bottom-full mb-2 w-36 bg-card border border-secondary/20 shadow-lg opacity-0 group-hover:opacity-100 invisible group-hover:visible transition-all duration-200 z-10">
+                    {props.links.map((repo) => (
                       <Link
                         key={repo.url}
                         href={repo.url}

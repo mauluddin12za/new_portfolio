@@ -6,7 +6,7 @@ type ProjectDetailProps = {
   description?: string;
   techStack?: string[];
   image?: string;
-  github?: {
+  links?: {
     label: string;
     url: string;
   }[];
@@ -18,7 +18,7 @@ export default function ProjectDetail({
   description,
   techStack,
   image,
-  github,
+  links,
   liveDemo,
 }: ProjectDetailProps) {
   return (
@@ -64,9 +64,9 @@ export default function ProjectDetail({
 
         {/* ACTIONS */}
         <div className="flex gap-4 items-center border-t border-secondary/20 pt-4 mt-4 ">
-          {github && github.length > 0 && (
+          {links && links.length > 0 && (
             <>
-              {github?.map((repo) => (
+              {links?.map((repo) => (
                 <Link
                   key={repo.url}
                   href={repo.url}
