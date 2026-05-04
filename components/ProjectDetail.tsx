@@ -22,7 +22,7 @@ export default function ProjectDetail({
   liveDemo,
 }: ProjectDetailProps) {
   return (
-    <div className="max-w-3xl w-full bg-background rounded-2xl overflow-hidden">
+    <div className="max-w-3xl w-full bg-background rounded-2xl">
       {image && (
         <div className="w-full relative overflow-hidden rounded-t-xl group/image">
           <Image

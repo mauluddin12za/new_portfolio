@@ -1,5 +1,37 @@
 export const projects = [
    {
+      title: "AI Esports Training Companion",
+      description:
+         "AI Esports Training Companion is a session-based web application that simulates a personal esports coaching experience powered by an AI character. Instead of acting as a generic chatbot, the system provides structured coaching designed to improve player decision-making, gameplay habits, and mindset.",
+      techStack: ["Next.js", "Gemini AI"],
+      image: "/images/projects/ai_esport_training_companion.png",
+      links: [
+         {
+            label: "Github",
+            url: "https://github.com/mauluddin12z/ai-esports-training-companion",
+         },
+      ],
+      liveDemo: "https://github.com/mauluddin12z/ai-esports-training-companion",
+   },
+   {
+      title: "AI Sales Page Builder",
+      description:
+         "AI Sales Page Generator is a full-stack web application designed to transform structured product or service information into a complete, high-converting sales page. The system leverages artificial intelligence to generate persuasive marketing copy and presents the result as a fully rendered landing page. The application enables users to input product details, generate structured content using an AI model, preview the output across multiple templates, regenerate specific sections, and export the final result as a standalone HTML file.",
+      techStack: ["Next.js", "Gemini AI", "Laravel", "MySql"],
+      image: "/images/projects/sales_page_builder.png",
+      links: [
+         {
+            label: "Frontend",
+            url: "https://github.com/mauluddin12z/sales-page-builder-frontend",
+         },
+         {
+            label: "Backend",
+            url: "https://github.com/mauluddin12z/sales-page-builder-backend",
+         },
+      ],
+      liveDemo: "https://sales-page-builder.hidayatmauluddin.my.id/",
+   },
+   {
       title: "Attendance PWA - FKIP Universitas Sriwijaya",
       description:
          "I developed a full-stack, location-based attendance system for FKIP with role-based access control, location validation for accurate attendance tracking, and full CRUD functionality, allowing seamless management of users and attendance records.",
