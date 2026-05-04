@@ -11,7 +11,7 @@ export const projects = [
             url: "https://github.com/mauluddin12z/ai-esports-training-companion",
          },
       ],
-      liveDemo: "https://github.com/mauluddin12z/ai-esports-training-companion",
+      liveDemo: "https://ai-esports-training-companion.vercel.app/",
    },
    {
       title: "AI Sales Page Builder",
