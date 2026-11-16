@@ -16,7 +16,7 @@ export const faq = [
   },
   {
     "question": "Education?",
-    "answer": "Master of Computer Science (M.Kom) from Universitas Sriwijaya (2023–2026, GPA 3.92), and a Bachelor's in Information Systems (GPA 3.66).",
+    "answer": "Master of Computer Science (M.Kom) from Universitas Sriwijaya (2023–2025, GPA 3.92), and a Bachelor's in Information Systems (GPA 3.66).",
     "featured": true
   },
   {

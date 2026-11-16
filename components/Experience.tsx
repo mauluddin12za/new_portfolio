@@ -1,22 +1,28 @@
-import { experience } from "@/lib/data";
+"use client";
+
 import { SectionHeader } from "./SectionHeader";
 import { Calendar, CheckCircle2 } from "lucide-react";
+import { useLanguage } from "@/context/LanguageContext";
+import { getTranslation } from "@/lib/i18n";
 
 export function Experience() {
+  const { locale } = useLanguage();
+  const t = getTranslation(locale);
+
   return (
     <section id="experience" className="py-28 px-6 relative">
       <div className="mx-auto max-w-7xl">
         <SectionHeader
-          eyebrow="Experience"
-          title="A timeline of compounding craft."
-          sub="±3 years of freelance engineering across web applications, enterprise platforms, and academic AI research."
+          eyebrow={t.experience.eyebrow}
+          title={t.experience.title}
+          sub={t.experience.sub}
         />
 
         <div className="relative">
           <div className="absolute left-4 md:left-1/2 top-0 bottom-0 w-px bg-linear-to-b from-primary/50 via-white/10 to-transparent" />
 
           <div className="space-y-12">
-            {experience.map((e, i) => (
+            {t.experience.items.map((e, i) => (
               <div
                 key={e.role}
                 className={`relative grid md:grid-cols-2 gap-8 items-start ${

@@ -25,7 +25,7 @@ export const knowledge = [
   {
     id: "profile-2",
     type: "education",
-    text: "He holds a Master of Computer Science (M.Kom) from Sriwijaya University (2023–2026, GPA 3.92) and a Bachelor's degree in Information Systems with a GPA of 3.66.",
+    text: "He holds a Master of Computer Science (M.Kom) from Sriwijaya University (2023–2025, GPA 3.92) and a Bachelor's degree in Information Systems with a GPA of 3.66.",
     keywords: [
       "education",
       "university",
@@ -162,7 +162,7 @@ export const knowledge = [
   {
     id: "project-1",
     type: "project",
-    text: "AI Esports Training Companion (2026) is an AI-powered esports coaching platform that simulates structured training sessions to improve player decision-making, gameplay habits, and mindset using Next.js and Gemini AI.",
+    text: "AI Esports Training Companion (2025) is an AI-powered esports coaching platform that simulates structured training sessions to improve player decision-making, gameplay habits, and mindset using Next.js and Gemini AI.",
     keywords: [
       "ai",
       "esports",

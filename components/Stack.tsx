@@ -1,17 +1,23 @@
+"use client";
+
 import { stack } from "@/lib/data";
 import { SectionHeader } from "./SectionHeader";
 import Image from "next/image";
+import { useLanguage } from "@/context/LanguageContext";
+import { getTranslation } from "@/lib/i18n";
 
 export function Stack() {
+  const { locale } = useLanguage();
+  const t = getTranslation(locale);
   const groups = Array.from(new Set(stack.map((s) => s.group)));
 
   return (
     <section id="stack" className="py-28 px-6">
       <div className="mx-auto max-w-7xl">
         <SectionHeader
-          eyebrow="Toolkit"
-          title="The stack I reach for."
-          sub="Battle-tested choices that prioritize developer velocity, runtime performance, and operational sanity."
+          eyebrow={t.stack.eyebrow}
+          title={t.stack.title}
+          sub={t.stack.sub}
         />
 
         <div className="grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3">

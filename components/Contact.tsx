@@ -1,9 +1,16 @@
+"use client";
+
 import { Mail, Linkedin, Calendar, MapPin } from "lucide-react";
 
 import { ContactItem } from "./ContactItem";
 import { contacts } from "@/lib/data";
+import { useLanguage } from "@/context/LanguageContext";
+import { getTranslation } from "@/lib/i18n";
 
 export function Contact() {
+  const { locale } = useLanguage();
+  const t = getTranslation(locale);
+
   return (
     <section id="contact" className="py-28 px-6">
       <div className="mx-auto max-w-5xl relative">
@@ -15,17 +22,16 @@ export function Contact() {
           <div className="relative">
             <div className="inline-flex items-center gap-2 glass rounded-full px-3 py-1.5 text-xs mb-6">
               <span className="size-2 rounded-full bg-emerald-400 animate-pulse" />
-              Currently accepting new projects
+              {t.contact.badge}
             </div>
 
             <h2 className="font-display text-4xl sm:text-6xl font-bold tracking-tight">
-              Let&apos;s build something{" "}
-              <span className="text-gradient">worth shipping.</span>
+              {t.contact.headingPrefix}{" "}
+              <span className="text-gradient">{t.contact.headingGradient}</span>
             </h2>
 
             <p className="mt-5 text-lg text-muted-foreground max-w-xl mx-auto">
-              Have a product idea, an open role, or a thorny engineering
-              problem? I read every message and reply within 24 hours.
+              {t.contact.description}
             </p>
 
             <div className="mt-10 flex flex-wrap justify-center gap-3">
@@ -44,25 +50,25 @@ export function Contact() {
                 rel="noopener noreferrer"
                 className="inline-flex items-center gap-2 rounded-full glass px-7 py-3.5 font-medium hover:bg-white/10 transition-colors"
               >
-                <Linkedin className="size-4" /> Connect on LinkedIn
+                <Linkedin className="size-4" /> {t.contact.connectLinkedIn}
               </a>
             </div>
 
             <div className="mt-10 grid grid-cols-1 md:grid-cols-3 gap-6 max-w-4xl mx-auto text-left">
               <ContactItem
                 icon={Mail}
-                label="Email"
+                label={t.contact.emailLabel}
                 value={contacts.mail.email}
               />
               <ContactItem
                 icon={MapPin}
-                label="Based in"
-                value="Palembang, ID"
+                label={t.contact.basedInLabel}
+                value={t.contact.basedInValue}
               />
               <ContactItem
                 icon={Calendar}
-                label="Response"
-                value="Within 24 hours"
+                label={t.contact.responseLabel}
+                value={t.contact.responseValue}
               />
             </div>
           </div>

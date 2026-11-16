@@ -5,6 +5,8 @@ import Image from "next/image";
 import portrait from "@/assets/hidayat-portrait.png";
 
 import { FloatChip } from "./FloatChip";
+import { useLanguage } from "@/context/LanguageContext";
+import { getTranslation } from "@/lib/i18n";
 
 import {
   ArrowUpRight,
@@ -18,6 +20,9 @@ import {
 import { contacts } from "@/lib/data";
 
 export function Hero() {
+  const { locale } = useLanguage();
+  const t = getTranslation(locale);
+
   return (
     <section
       id="top"
@@ -33,24 +38,21 @@ export function Hero() {
               <span className="animate-pulse-ring absolute inline-flex h-full w-full rounded-full bg-emerald-400" />
               <span className="relative inline-flex size-2 rounded-full bg-emerald-400" />
             </span>
-            Available for Full-Stack Web Development Projects
+            {t.hero.badge}
           </div>
 
           <h1 className="font-display text-5xl sm:text-6xl lg:text-7xl font-bold leading-[1.05] tracking-tight">
-            Crafting fast, scalable,
-            <span className="text-gradient"> production-grade</span>
-            <br />
-            web applications.
+            {t.hero.headlinePrefix}{" "}
+            <span className="text-gradient"> {t.hero.headlineGradient}</span>
+            {t.hero.headlineSuffix && (
+              <>
+                <br />
+                {t.hero.headlineSuffix}
+              </>
+            )}
           </h1>
           <p className="mt-6 text-lg text-muted-foreground max-w-2xl leading-relaxed">
-            I&apos;m{" "}
-            <span className="text-foreground font-medium">
-              Hidayat Mauluddin
-            </span>{" "}
-            - a Full-Stack Web Developer building scalable and high-performance
-            web applications with Next.js, React, Node.js, and MySQL.
-            Specialized in secure backend architecture, REST APIs, and
-            AI-powered integrations that create smarter digital experiences.
+            {t.hero.intro}
           </p>
 
           <div className="mt-8 flex flex-wrap items-center gap-3">
@@ -58,7 +60,7 @@ export function Hero() {
               href="#work"
               className="inline-flex items-center gap-2 rounded-full bg-primary px-6 py-3 text-sm font-medium text-primary-foreground hover:shadow-[0_0_40px_rgba(80,200,255,0.45)] transition-all"
             >
-              View Selected Work <ArrowUpRight className="size-4" />
+              {t.hero.viewWork} <ArrowUpRight className="size-4" />
             </a>
 
             <a
@@ -67,7 +69,7 @@ export function Hero() {
               rel="noopener noreferrer"
               className="inline-flex items-center gap-2 rounded-full glass px-6 py-3 text-sm font-medium hover:bg-white/10 transition-colors"
             >
-              <PhoneForwardedIcon className="size-4" /> Get in Touch
+              <PhoneForwardedIcon className="size-4" /> {t.hero.getInTouch}
             </a>
 
             <div className="flex items-center gap-1 ml-2">

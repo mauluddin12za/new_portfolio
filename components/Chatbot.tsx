@@ -7,6 +7,8 @@ import Image from "next/image";
 import { v4 as uuidv4 } from "uuid";
 import { getFeaturedFAQ } from "@/lib/faq-ui";
 import { sendChatMessage } from "@/lib/chat/client";
+import { useLanguage } from "@/context/LanguageContext";
+import { getTranslation } from "@/lib/i18n";
 
 type Msg = {
   role: "bot" | "user";
@@ -15,14 +17,6 @@ type Msg = {
   id?: string;
   source?: string;
 };
-
-const initialMessages: Msg[] = [
-  {
-    role: "bot",
-    text: "Hey there 👋 I'm Hidayat's assistant. Ask me anything about his work, stack, or availability.",
-    time: "now",
-  },
-];
 
 const formatHistory = (messages: Msg[]) => {
   return messages
@@ -35,10 +29,34 @@ const formatHistory = (messages: Msg[]) => {
 };
 
 export function Chatbot() {
+  const { locale } = useLanguage();
+  const t = getTranslation(locale);
+
   const [open, setOpen] = useState(false);
-  const [messages, setMessages] = useState<Msg[]>(initialMessages);
+  const [messages, setMessages] = useState<Msg[]>([
+    {
+      role: "bot",
+      text: t.chatbot.initialMessage,
+      time: "now",
+    },
+  ]);
   const [input, setInput] = useState("");
   const [loading, setLoading] = useState(false);
+
+  useEffect(() => {
+    setMessages((prev) => {
+      if (prev.length <= 1) {
+        return [
+          {
+            role: "bot",
+            text: t.chatbot.initialMessage,
+            time: "now",
+          },
+        ];
+      }
+      return prev;
+    });
+  }, [t.chatbot.initialMessage]);
 
   const scrollRef = useRef<HTMLDivElement>(null);
   const textareaRef = useRef<HTMLTextAreaElement | null>(null);
@@ -65,7 +83,13 @@ export function Chatbot() {
 
     // handle /clear command locally
     if (trimmed === "/clear") {
-      setMessages(initialMessages);
+      setMessages([
+        {
+          role: "bot",
+          text: t.chatbot.initialMessage,
+          time: "now",
+        },
+      ]);
       setInput("");
       return;
     }
@@ -138,10 +162,10 @@ export function Chatbot() {
             </div>
             <div className="flex-1 min-w-0">
               <div className="font-display font-semibold leading-tight">
-                Ask Hidayat
+                {t.chatbot.title}
               </div>
               <div className="text-xs text-muted-foreground">
-                Typically replies in seconds
+                {t.chatbot.sub}
               </div>
             </div>
             <button
@@ -198,7 +222,7 @@ export function Chatbot() {
 
             {loading && (
               <div className="text-xs text-muted-foreground">
-                Assistant is typing...
+                {t.chatbot.typing}
               </div>
             )}
           </div>
@@ -221,7 +245,7 @@ export function Chatbot() {
                   send(input);
                 }
               }}
-              placeholder="Type a message…"
+              placeholder={t.chatbot.placeholder}
               rows={1}
               className="flex-1 resize-none overflow-hidden bg-white/5 border border-white/10 rounded-full px-4 py-2.5 text-sm placeholder:text-muted-foreground focus:outline-none focus:border-primary/50 focus:bg-white/10 transition whitespace-pre-wrap"
             />
