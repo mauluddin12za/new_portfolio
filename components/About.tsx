@@ -24,8 +24,8 @@ export function About() {
           <div className="absolute -bottom-6 -right-6 glass rounded-2xl p-5 max-w-[220px]">
             <Quote className="size-5 text-primary mb-2" />
             <p className="text-sm text-muted-foreground leading-relaxed">
-              "Make it correct, make it clear, then make it fast — in that
-              order."
+              &ldquo;Make it correct, make it clear, then make it fast &mdash; in that
+              order.&rdquo;
             </p>
           </div>
         </div>
@@ -51,8 +51,9 @@ export function About() {
             </p>
 
             <p>
-              Outside of work I write about distributed systems, contribute to
-              open source, and brew an embarrassing amount of pour-over coffee.
+              Currently completing a Master of Computer Science at Sriwijaya
+              University, researching adaptive facial image restoration using CNN
+              and U-Net — blending academic depth with production engineering.
             </p>
           </div>
 
@@ -60,7 +61,7 @@ export function About() {
             <Pill icon={MapPin} label="Palembang, Indonesia" />
             <Pill icon={Globe} label="Open to remote · global" />
             <Pill icon={Coffee} label="Coffee enthusiast" />
-            <Pill icon={Users} label="Mentor at codingforall" />
+            <Pill icon={Users} label="ML / AI Researcher" />
           </div>
         </div>
       </div>

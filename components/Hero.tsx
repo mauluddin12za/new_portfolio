@@ -8,7 +8,6 @@ import { FloatChip } from "./FloatChip";
 
 import {
   ArrowUpRight,
-  Mail,
   Code2,
   Database,
   BrainCircuit,
@@ -44,7 +43,7 @@ export function Hero() {
             web applications.
           </h1>
           <p className="mt-6 text-lg text-muted-foreground max-w-2xl leading-relaxed">
-            I'm{" "}
+            I&apos;m{" "}
             <span className="text-foreground font-medium">
               Hidayat Mauluddin
             </span>{" "}

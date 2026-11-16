@@ -19,10 +19,10 @@ export const nav = [
 ];
 
 export const stats = [
-  { k: "5+", v: "Years building" },
-  { k: "30+", v: "Shipped projects" },
-  { k: "12", v: "Happy clients" },
-  { k: "99.9%", v: "Uptime SLA" },
+  { k: "±3 Yrs", v: "Web dev experience" },
+  { k: "9+", v: "Shipped projects" },
+  { k: "4", v: "Freelance clients" },
+  { k: "M.Kom", v: "Sriwijaya University" },
 ];
 
 export const projects = [
@@ -53,16 +53,7 @@ export const projects = [
     stack: ["Next.js", "Gemini AI", "Laravel", "MySQL"],
     image: "/images/projects/sales_page_builder.png",
     liveDemo: "https://sales-page-builder.hidayatmauluddin.my.id/",
-    links: [
-      {
-        label: "Frontend",
-        url: "https://github.com/mauluddin12za/sales-page-builder-frontend",
-      },
-      {
-        label: "Backend",
-        url: "https://github.com/mauluddin12za/sales-page-builder-backend",
-      },
-    ],
+    links: [],
     accent: "from-violet-400/30 to-fuchsia-500/10",
   },
 
@@ -75,16 +66,7 @@ export const projects = [
     stack: ["Next.js", "Express.js", "MySQL"],
     image: "/images/projects/attendance_pwa.png",
     liveDemo: "https://attendance-pwa.hidayatmauluddin.my.id",
-    links: [
-      {
-        label: "Frontend",
-        url: "https://github.com/mauluddin12za/frontend-attendance-pwa-fkip-unsri",
-      },
-      {
-        label: "Backend",
-        url: "https://github.com/mauluddin12za/backend-attendance-pwa-fkip-unsri",
-      },
-    ],
+    links: [],
     accent: "from-emerald-400/30 to-teal-500/10",
   },
 
@@ -93,20 +75,11 @@ export const projects = [
     tag: "POS System",
     year: "2025",
     blurb:
-      "A restaurant operating system designed to streamline ordering, cashier operations, and inventory synchronization through a centralized dashboard with real-time transaction and stock management workflows.",
+      "A restaurant operating system designed to streamline ordering, cashier operations, and inventory synchronization through a centralized dashboard. Processed 2,601 transactions across 10,176 items sold, eliminating manual tally and saving hours of end-of-day reconciliation.",
     stack: ["Next.js", "Express.js", "MySQL"],
     image: "/images/projects/pos_warung19.png",
     liveDemo: "https://pos-resto.hidayatmauluddin.my.id",
-    links: [
-      {
-        label: "Frontend",
-        url: "https://github.com/mauluddin12za/pos-resto19-frontend",
-      },
-      {
-        label: "Backend",
-        url: "https://github.com/mauluddin12za/pos-resto19-backend",
-      },
-    ],
+    links: [],
     accent: "from-amber-400/30 to-orange-500/10",
   },
 
@@ -119,16 +92,7 @@ export const projects = [
     stack: ["Next.js", "Express.js", "MySQL"],
     image: "/images/projects/hambali_furniture.png",
     liveDemo: "https://hambali-furniture.hidayatmauluddin.my.id",
-    links: [
-      {
-        label: "Frontend",
-        url: "https://github.com/mauluddin12za/hambali-furniture-frontend",
-      },
-      {
-        label: "Backend",
-        url: "https://github.com/mauluddin12za/hambali-furniture-backend",
-      },
-    ],
+    links: [],
     accent: "from-pink-400/30 to-rose-500/10",
   },
 
@@ -141,16 +105,7 @@ export const projects = [
     stack: ["Vite React", "Express.js", "MySQL"],
     image: "/images/projects/score_tracker.png",
     liveDemo: "https://score-tracker.hidayatmauluddin.my.id",
-    links: [
-      {
-        label: "Frontend",
-        url: "https://github.com/mauluddin12za/score-tracker-frontend",
-      },
-      {
-        label: "Backend",
-        url: "https://github.com/mauluddin12za/score-tracker-backend",
-      },
-    ],
+    links: [],
     accent: "from-sky-400/30 to-indigo-500/10",
   },
   {
@@ -163,10 +118,6 @@ export const projects = [
     image: "/images/projects/storefindercover.png",
     liveDemo: "https://store-finder.hidayatmauluddin.my.id",
     links: [
-      {
-        label: "Frontend",
-        url: "https://github.com/mauluddin12za/store-finder",
-      },
       {
         label: "Case Study",
         url: "https://uxdesigner-portfolio-hidayat-mauluddin.vercel.app/casestudy/store-finder-web-responsive-design",
@@ -211,8 +162,20 @@ export const experience = [
     period: "Aug 2025",
     bullets: [
       "Developed a custom, zero-lag Point of Sale platform tailored to streamline peak-hour ordering and real-time inventory management.",
+      "Processed 2,601 transactions across 10,176 items sold, eliminating manual tally and saving hours of end-of-day reconciliation.",
       "Created an automated CRUD workflow for live stock updates, preventing inventory discrepancies between kitchen staff and cashiers.",
       "Implemented ironclad backend authorization to secure daily sales data and financial audit trails from unauthorized access.",
+    ],
+  },
+  {
+    role: "Master's Researcher — Facial Image Restoration (CNN + U-Net)",
+    company: "Universitas Sriwijaya",
+    period: "2023 — 2026",
+    bullets: [
+      "Completed M.Kom (Master of Computer Science) while conducting full-time thesis research on adaptive image restoration.",
+      'Authored thesis: "Enhancing Facial Image Restoration Using CNN for Blur Severity Classification and U-Net for Deblurring".',
+      "Achieved PSNR 40.001 dB / SSIM 0.990 (very-low blur) on the FFHQ dataset, consistently outperforming fixed and multi-kernel baselines across all five severity levels.",
+      "Applied CNN for blur severity classification (5 classes) feeding the most suitable U-Net deblurring model per image, optimizing restoration quality.",
     ],
   },
   {

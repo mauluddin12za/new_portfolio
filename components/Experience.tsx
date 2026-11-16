@@ -9,7 +9,7 @@ export function Experience() {
         <SectionHeader
           eyebrow="Experience"
           title="A timeline of compounding craft."
-          sub="Five years building production software across startups, agencies, and enterprise teams."
+          sub="±3 years of freelance engineering across web applications, enterprise platforms, and academic AI research."
         />
 
         <div className="relative">

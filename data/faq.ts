@@ -1,7 +1,7 @@
 export const faq = [
   {
     "question": "Who are you?",
-    "answer": "I'm Muhammad Hidayat Mauluddin, a Full-Stack Web Developer and Machine Learning enthusiast from Palembang, Indonesia.",
+    "answer": "I'm Muhammad Hidayat Mauluddin, a Full-Stack Web Developer and Machine Learning researcher from Palembang, Indonesia.",
     "featured": true
   },
   {
@@ -11,21 +11,26 @@ export const faq = [
   },
   {
     "question": "Experience?",
-    "answer": "I have experience building web applications, POS systems, company websites, and machine learning projects.",
+    "answer": "±3 years of freelance web development — building PWAs, POS systems, company websites, and AI-powered applications for clients.",
     "featured": true
   },
   {
     "question": "Education?",
-    "answer": "Master of Computer Science from Universitas Sriwijaya with a GPA of 3.92.",
+    "answer": "Master of Computer Science (M.Kom) from Universitas Sriwijaya (2023–2026, GPA 3.92), and a Bachelor's in Information Systems (GPA 3.66).",
+    "featured": true
+  },
+  {
+    "question": "Thesis / Research?",
+    "answer": "My thesis is titled 'Enhancing Facial Image Restoration Using CNN for Blur Severity Classification and U-Net for Deblurring'. It achieves PSNR 40.001 dB / SSIM 0.990 on the FFHQ dataset for very-low blur severity, outperforming fixed and multi-kernel baselines.",
     "featured": true
   },
   {
     "question": "Web projects?",
-    "answer": "Attendance systems, POS applications, and company websites with admin dashboards."
+    "answer": "Attendance PWA (Sriwijaya University), POS system (Pempek 19 Cafe — 2,601 transactions processed), Hambali Furniture company site, AI Sales Page Builder, and more."
   },
   {
     "question": "ML projects?",
-    "answer": "Face restoration, heart disease prediction, and car price prediction models."
+    "answer": "Facial image restoration with CNN + U-Net (thesis), heart disease prediction using ANN with GA/PSO optimization."
   },
   {
     "question": "Frontend skills?",
@@ -41,18 +46,18 @@ export const faq = [
   },
   {
     "question": "Machine learning?",
-    "answer": "Experience with CNN, U-Net, ANN, Random Forest, TensorFlow, and Keras."
+    "answer": "Experience with CNN, U-Net, ANN, TensorFlow, and Keras — applied to image restoration and medical prediction tasks."
   },
   {
     "question": "Certifications?",
-    "answer": "AWS Cloud Practitioner, Dicoding Back-End & JavaScript, and Google UX Design."
+    "answer": "AWS Cloud Practitioner Essentials, Dicoding Back-End & JavaScript, Applied Machine Learning, IBM Data Analysis & Visualization with Python, and Google UX Design."
   },
   {
     "question": "Remote work?",
-    "answer": "Yes, I'm open to remote and on-site opportunities."
+    "answer": "Yes, I'm open to remote and on-site opportunities globally."
   },
   {
     "question": "Contact?",
-    "answer": "Email: mauludindayat@gmail.com | LinkedIn: linkedin.com/in/hidayatmauluddin"
+    "answer": "Email: mauludindayat@gmail.com | LinkedIn: linkedin.com/in/hidayatmauluddin | Telegram: @mauluddin12z"
   }
 ]

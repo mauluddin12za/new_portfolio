@@ -1,9 +1,11 @@
+import { ComponentType } from "react";
+
 export function ContactItem({
   icon: Icon,
   label,
   value,
 }: {
-  icon: any;
+  icon: ComponentType<{ className?: string }>;
   label: string;
   value: string;
 }) {

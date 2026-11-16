@@ -5,7 +5,7 @@ export const knowledge = [
   {
     id: "profile-1",
     type: "profile",
-    text: "Muhammad Hidayat Mauluddin is a Full-Stack Web Developer based in Palembang, Indonesia. He specializes in Next.js, Node.js, Express.js, and MySQL, with experience building scalable web applications, REST APIs, and AI-powered systems.",
+    text: "Muhammad Hidayat Mauluddin is a Full-Stack Web Developer based in Palembang, Indonesia. He specializes in Next.js, Node.js, Express.js, and MySQL, with ±3 years of experience building scalable web applications, REST APIs, and AI-powered systems. He is also a machine learning researcher completing a Master of Computer Science (M.Kom) at Sriwijaya University.",
     keywords: [
       "fullstack",
       "web developer",
@@ -17,13 +17,15 @@ export const knowledge = [
       "api",
       "developer",
       "portfolio",
+      "ml",
+      "researcher",
     ],
   },
 
   {
     id: "profile-2",
     type: "education",
-    text: "He holds a Master of Computer Science from Sriwijaya University with a GPA of 3.92 and a Bachelor's degree in Information Systems with a GPA of 3.66.",
+    text: "He holds a Master of Computer Science (M.Kom) from Sriwijaya University (2023–2026, GPA 3.92) and a Bachelor's degree in Information Systems with a GPA of 3.66.",
     keywords: [
       "education",
       "university",
@@ -33,16 +35,44 @@ export const knowledge = [
       "computer science",
       "degree",
       "informatics",
+      "sriwijaya",
+      "mkom",
     ],
   },
 
   /**
-   * EXPERIENCE (ENRICHED)
+   * THESIS / RESEARCH
+   */
+  {
+    id: "thesis-1",
+    type: "research",
+    text: "His M.Kom thesis is titled 'Enhancing Facial Image Restoration Using CNN for Blur Severity Classification and U-Net for Deblurring'. The proposed method classifies blur severity into five levels (very low, low, medium, high, very high) using a CNN, then routes each image to the most suitable U-Net deblurring model. Dataset: Flickr-Faces-HQ (FFHQ) with Gaussian blur applied. Results: PSNR 40.001 dB / SSIM 0.990 (very low); PSNR 31.104 dB / SSIM 0.946 (low); PSNR 27.995 dB / SSIM 0.874 (medium); PSNR 28.896 dB / SSIM 0.855 (high); PSNR 26.566 dB / SSIM 0.812 (very high). The method consistently outperforms fixed-kernel and multi-kernel baselines across all severity levels.",
+    keywords: [
+      "thesis",
+      "research",
+      "cnn",
+      "unet",
+      "image restoration",
+      "deblurring",
+      "psnr",
+      "ssim",
+      "ffhq",
+      "gaussian blur",
+      "blur severity",
+      "facial image",
+      "deep learning",
+      "machine learning",
+      "mkom",
+    ],
+  },
+
+  /**
+   * EXPERIENCE
    */
   {
     id: "exp-1",
     type: "experience",
-    text: "Freelance Fullstack Developer (2025) at Sriwijaya University: Built a location-based attendance PWA using Next.js and Node.js with REST APIs, authentication, role-based access control, geolocation validation, and MySQL optimization.",
+    text: "Freelance Fullstack Developer (Oct–Dec 2025) at Sriwijaya University: Built a location-based attendance PWA using Next.js and Node.js with REST APIs, authentication, role-based access control (RBAC), geolocation validation, and MySQL optimization.",
     keywords: [
       "pwa",
       "attendance",
@@ -53,47 +83,13 @@ export const knowledge = [
       "mysql",
       "geolocation",
       "2025",
+      "rbac",
     ],
   },
   {
     id: "exp-2",
     type: "experience",
-    text: "Freelance Fullstack Developer (2025) for Pempek 19 Cafe: Built a POS system using Next.js and Node.js with authentication, product management, and transaction handling.",
-    keywords: [
-      "pos",
-      "nextjs",
-      "nodejs",
-      "crud",
-      "inventory",
-      "transaction",
-      "2025",
-    ],
-  },
-  {
-    id: "exp-3",
-    type: "experience",
-    text: "Freelance Developer (2023) for Hambali Furniture: Built a company website and admin dashboard using Next.js with REST API integration and database optimization.",
-    keywords: [
-      "website",
-      "admin",
-      "nextjs",
-      "api",
-      "mysql",
-      "optimization",
-      "2023",
-    ],
-  },
-  {
-    id: "exp-4",
-    type: "experience",
-    text: "Freelance Web Developer (2022) for Isuzu Sales South Sumatra: Built a sales website using CodeIgniter 3 and MySQL with admin panel for managing listings and inquiries.",
-    keywords: ["codeigniter", "php", "mysql", "sales", "admin", "2022"],
-  },
-
-  {
-    id: "exp-2",
-    type: "experience",
-    text: "Freelance Fullstack Developer for Pempek 19 Cafe: Built a Point of Sale (POS) system using Next.js and Node.js with authentication, product management, transaction handling, and inventory CRUD system.",
+    text: "Freelance Fullstack Developer (Aug 2025) for Pempek 19 Cafe: Built a POS system using Next.js and Node.js with authentication, product management, and transaction handling. Processed 2,601 transactions across 10,176 items sold, eliminating manual tally and saving hours of end-of-day reconciliation.",
     keywords: [
       "pos",
       "point of sale",
@@ -105,13 +101,32 @@ export const knowledge = [
       "freelance",
       "sales",
       "transaction",
+      "2025",
+      "restaurant",
     ],
   },
-
   {
     id: "exp-3",
     type: "experience",
-    text: "Freelance Developer for Hambali Furniture: Built a responsive company website and admin dashboard using Next.js, integrated REST APIs, and optimized database queries for performance.",
+    text: "Master's Researcher (2023–2026) at Universitas Sriwijaya: Completed M.Kom while conducting thesis research on adaptive facial image restoration using CNN and U-Net. Research gap from client freelance work during this period.",
+    keywords: [
+      "master",
+      "mkom",
+      "thesis",
+      "researcher",
+      "cnn",
+      "unet",
+      "sriwijaya",
+      "2023",
+      "2024",
+      "2025",
+      "2026",
+    ],
+  },
+  {
+    id: "exp-4",
+    type: "experience",
+    text: "Freelance Developer (Jun–Jul 2023) for Hambali Furniture: Built a responsive company website and admin dashboard using Next.js, integrated REST APIs, and optimized database queries for performance.",
     keywords: [
       "website",
       "admin dashboard",
@@ -121,13 +136,13 @@ export const knowledge = [
       "optimization",
       "freelance",
       "cms",
+      "2023",
     ],
   },
-
   {
-    id: "exp-4",
+    id: "exp-5",
     type: "experience",
-    text: "Freelance Web Developer for Isuzu Sales South Sumatra: Developed a full sales website using CodeIgniter 3 and MySQL with admin panel for managing listings and customer inquiries.",
+    text: "Freelance Web Developer (Mar 2022) for Isuzu Sales South Sumatra: Developed a full sales website using CodeIgniter 3 and MySQL with admin panel for managing listings and customer inquiries. Delivered within a one-week timeline.",
     keywords: [
       "codeigniter",
       "php",
@@ -137,14 +152,12 @@ export const knowledge = [
       "freelance",
       "sales",
       "crm",
+      "2022",
     ],
   },
 
   /**
-   * PROJECTS (NEW - IMPORTANT)
-   */
-  /**
-   * PROJECTS (UPDATED WITH REAL DATA)
+   * PROJECTS
    */
   {
     id: "project-1",
@@ -165,93 +178,7 @@ export const knowledge = [
   {
     id: "project-2",
     type: "project",
-    text: "AI Sales Page Builder (2026) is a full-stack AI SaaS tool that converts structured product inputs into high-converting sales pages with templates and exportable HTML using Next.js, Laravel, MySQL, and Gemini AI.",
-    keywords: [
-      "ai",
-      "saas",
-      "nextjs",
-      "laravel",
-      "mysql",
-      "sales",
-      "generator",
-      "automation",
-      "2026",
-    ],
-  },
-  {
-    id: "project-3",
-    type: "project",
-    text: "Attendance PWA (2025) is a location-based attendance system with role-based access control, geolocation validation, and CRUD features using Next.js, Express.js, and MySQL.",
-    keywords: [
-      "pwa",
-      "attendance",
-      "nextjs",
-      "express",
-      "mysql",
-      "geolocation",
-      "crud",
-      "2025",
-    ],
-  },
-  {
-    id: "project-4",
-    type: "project",
-    text: "Point of Sale - Warung 19 (2025) is a web-based POS system to manage restaurant orders, transactions, and admin operations using Next.js, Express.js, and MySQL.",
-    keywords: [
-      "pos",
-      "restaurant",
-      "nextjs",
-      "express",
-      "mysql",
-      "transactions",
-      "2025",
-    ],
-  },
-  {
-    id: "project-5",
-    type: "project",
-    text: "Hambali Furniture (2023) is an e-commerce platform with admin dashboard for product and content management using Next.js, Express.js, and MySQL.",
-    keywords: [
-      "ecommerce",
-      "nextjs",
-      "express",
-      "mysql",
-      "admin",
-      "cms",
-      "2023",
-    ],
-  },
-  {
-    id: "project-6",
-    type: "project",
-    text: "Score Tracker (2024) is an academic system for tracking and analyzing student performance with dashboards using Vite React, Express.js, and MySQL.",
-    keywords: [
-      "education",
-      "react",
-      "express",
-      "mysql",
-      "dashboard",
-      "analytics",
-      "2024",
-    ],
-  },
-  {
-    id: "project-7",
-    type: "project",
-    text: "Isuzu Sales Website (2022) is a company website and product catalog system with admin panel built using CodeIgniter 3 and MySQL.",
-    keywords: ["codeigniter", "php", "mysql", "sales", "admin", "crm", "2022"],
-  },
-  {
-    id: "project-8",
-    type: "project",
-    text: "Store Finder UI/UX (2024) is a location-based discovery platform that helps users find stores and products based on proximity and category using Vite React.",
-    keywords: ["react", "ui", "ux", "location", "store", "frontend", "2024"],
-  },
-
-  {
-    id: "project-2",
-    type: "project",
-    text: "AI Sales Page Builder is a full-stack AI SaaS tool that converts structured product inputs into high-converting sales pages with multiple templates and exportable HTML output using Next.js, Gemini AI, Laravel, and MySQL.",
+    text: "AI Sales Page Builder (2026) is a full-stack AI SaaS tool that converts structured product inputs into high-converting sales pages with multiple templates and exportable HTML output using Next.js, Gemini AI, Laravel, and MySQL. This is a private client project.",
     keywords: [
       "ai",
       "saas",
@@ -262,13 +189,13 @@ export const knowledge = [
       "generator",
       "automation",
       "gemini",
+      "2026",
     ],
   },
-
   {
     id: "project-3",
     type: "project",
-    text: "Attendance PWA is a location-based attendance system with role-based access control, geolocation validation, and full CRUD management built using Next.js, Express.js, and MySQL.",
+    text: "Attendance PWA (2025) is a location-based attendance system for FKIP Sriwijaya University with role-based access control, geolocation validation, and full CRUD management built using Next.js, Express.js, and MySQL. This is a private client project.",
     keywords: [
       "pwa",
       "attendance",
@@ -278,13 +205,14 @@ export const knowledge = [
       "geolocation",
       "crud",
       "authentication",
+      "2025",
+      "unsri",
     ],
   },
-
   {
     id: "project-4",
     type: "project",
-    text: "Point of Sale system for Warung 19 is a web-based POS application to manage orders, transactions, and restaurant operations with full admin dashboard.",
+    text: "Point of Sale - Warung 19 (2025) is a web-based POS system to manage restaurant orders, transactions, and admin operations. Processed 2,601 transactions across 10,176 items sold. Built using Next.js, Express.js, and MySQL. This is a private client project.",
     keywords: [
       "pos",
       "restaurant",
@@ -293,13 +221,14 @@ export const knowledge = [
       "mysql",
       "admin",
       "transactions",
+      "2025",
+      "warung19",
     ],
   },
-
   {
     id: "project-5",
     type: "project",
-    text: "Hambali Furniture is an e-commerce platform with admin dashboard for product and content management to improve online visibility and store operations.",
+    text: "Hambali Furniture (2023) is a company profile platform with admin dashboard for product and content management to improve online visibility and store operations. Built using Next.js, Express.js, and MySQL. This is a private client project.",
     keywords: [
       "ecommerce",
       "nextjs",
@@ -308,13 +237,13 @@ export const knowledge = [
       "admin dashboard",
       "shop",
       "cms",
+      "2023",
     ],
   },
-
   {
     id: "project-6",
     type: "project",
-    text: "Score Tracker is an academic performance system for tracking, analyzing, and visualizing student scores using dashboards and reports.",
+    text: "Score Tracker (2024) is an academic performance system for tracking, analyzing, and visualizing student scores using dashboards and reports. Built using Vite React, Express.js, and MySQL. This is a private client project.",
     keywords: [
       "education",
       "dashboard",
@@ -323,22 +252,20 @@ export const knowledge = [
       "mysql",
       "analytics",
       "students",
+      "2024",
     ],
   },
-
   {
     id: "project-7",
     type: "project",
-    text: "Isuzu Sales Website is a company website and product catalog system with admin panel for managing listings and customer inquiries.",
-    keywords: [
-      "codeigniter",
-      "php",
-      "mysql",
-      "sales",
-      "admin panel",
-      "crm",
-      "website",
-    ],
+    text: "Store Finder (2024) is a location-based discovery platform that helps users find stores and products based on proximity and category. Built using Vite React. UI/UX case study available.",
+    keywords: ["react", "ui", "ux", "location", "store", "frontend", "2024"],
+  },
+  {
+    id: "project-8",
+    type: "project",
+    text: "Isuzu Sales Website (2022) is a company website and product catalog system with admin panel for managing listings and customer inquiries. Built using CodeIgniter 3 and MySQL.",
+    keywords: ["codeigniter", "php", "mysql", "sales", "admin panel", "crm", "website", "2022"],
   },
 
   /**
@@ -347,7 +274,7 @@ export const knowledge = [
   {
     id: "skill-1",
     type: "skills",
-    text: "Frontend: HTML, CSS, JavaScript, Next.js. Backend: Node.js, Express.js. Database: MySQL. Cloud: AWS, Firebase. DevOps: Docker. AI/ML: TensorFlow, Python.",
+    text: "Frontend: HTML, CSS, JavaScript, Next.js, React. Backend: Node.js, Express.js. Database: MySQL. Cloud: AWS, Firebase. DevOps: Docker. AI/ML: TensorFlow, Python, Keras, CNN, U-Net.",
     keywords: [
       "html",
       "css",
@@ -364,16 +291,17 @@ export const knowledge = [
       "ai",
       "ml",
       "react",
+      "keras",
     ],
   },
 
   /**
-   * MACHINE LEARNING
+   * MACHINE LEARNING / RESEARCH
    */
   {
     id: "ml-1",
     type: "machine-learning",
-    text: "Experience in machine learning includes face image restoration using CNN and U-Net evaluated with PSNR and SSIM, and heart attack prediction using ANN optimized with Genetic Algorithm (GA) and Particle Swarm Optimization (PSO).",
+    text: "Machine learning experience includes: (1) Facial image restoration using CNN for blur severity classification and U-Net for deblurring — thesis research, achieving PSNR 40.001 dB / SSIM 0.990 on FFHQ dataset. (2) Heart attack prediction using ANN optimized with Genetic Algorithm (GA) and Particle Swarm Optimization (PSO).",
     keywords: [
       "machine learning",
       "ml",
@@ -385,6 +313,8 @@ export const knowledge = [
       "ga",
       "pso",
       "tensorflow",
+      "image restoration",
+      "deblurring",
     ],
   },
 
@@ -394,7 +324,7 @@ export const knowledge = [
   {
     id: "cert-1",
     type: "certification",
-    text: "Certified in JavaScript Programming (Dicoding, 2023), Back-End Development (Dicoding, 2023), AWS Cloud Practitioner Essentials (2024), Data Analysis and Visualization with Python (IBM, 2022), Machine Learning Developer (2022), Applied Machine Learning (2023), and UX Design (Google x Kominfo, 2022).",
+    text: "Certified in JavaScript Programming (Dicoding, 2023), Back-End Development (Dicoding, 2023), AWS Cloud Practitioner Essentials (Dicoding, 2024), Data Analysis with Python (IBM, 2022), Data Visualization with Python (IBM, 2022), Machine Learning Developer (2022), Applied Machine Learning (Dicoding, 2023), and UX Design (Google x Kominfo, 2022).",
     keywords: [
       "certificate",
       "certification",
@@ -405,6 +335,7 @@ export const knowledge = [
       "javascript",
       "python",
       "machine learning",
+      "google",
     ],
   },
 
@@ -414,7 +345,7 @@ export const knowledge = [
   {
     id: "contact-1",
     type: "contact",
-    text: "Contact: GitHub (github.com/mauluddin12z), LinkedIn (linkedin.com/in/hidayatmauluddin), Email (mauludindayat@gmail.com).",
-    keywords: ["github", "linkedin", "email", "contact", "reach"],
+    text: "Contact: GitHub (github.com/mauluddin12z), LinkedIn (linkedin.com/in/hidayatmauluddin), Email (mauludindayat@gmail.com), Telegram (@mauluddin12z).",
+    keywords: ["github", "linkedin", "email", "contact", "reach", "telegram"],
   },
 ];

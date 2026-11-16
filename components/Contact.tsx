@@ -19,7 +19,7 @@ export function Contact() {
             </div>
 
             <h2 className="font-display text-4xl sm:text-6xl font-bold tracking-tight">
-              Let's build something{" "}
+              Let&apos;s build something{" "}
               <span className="text-gradient">worth shipping.</span>
             </h2>
 

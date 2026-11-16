@@ -41,12 +41,17 @@ export async function callGemini<T>(prompt: unknown): Promise<T> {
           response.data.candidates?.[0]?.content?.parts?.[0]?.text ?? "{}";
 
         return text;
-      } catch (err: any) {
-        const msg = (
-          err?.response?.data?.error?.message ||
-          err.message ||
-          ""
-        ).toLowerCase();
+      } catch (err: unknown) {
+        let msg = "";
+        if (axios.isAxiosError(err)) {
+          msg = (
+            (err.response?.data as { error?: { message?: string } } | undefined)?.error?.message ||
+            err.message ||
+            ""
+          ).toLowerCase();
+        } else if (err instanceof Error) {
+          msg = err.message.toLowerCase();
+        }
 
         if (IS_DEBUG) {
           console.error("[Gemini Error]", {

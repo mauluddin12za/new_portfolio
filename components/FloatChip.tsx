@@ -1,3 +1,5 @@
+import { ComponentType } from "react";
+
 export function FloatChip({
   className = "",
   delay = "0s",
@@ -6,7 +8,7 @@ export function FloatChip({
 }: {
   className?: string;
   delay?: string;
-  icon: any;
+  icon: ComponentType<{ className?: string }>;
   label: string;
 }) {
   return (

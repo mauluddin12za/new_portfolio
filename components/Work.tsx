@@ -98,7 +98,7 @@ export function Work() {
                           rel="noopener noreferrer"
                           className="inline-flex items-center gap-1.5 text-sm font-medium hover:text-primary transition-colors"
                         >
-                          <Code2 className="size-4" /> Code
+                          <Code2 className="size-4" /> {p.links[0].label || "Code"}
                         </a>
                       ) : null}
                       <a

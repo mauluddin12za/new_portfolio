@@ -15,7 +15,7 @@ export function safeJSONParse<T>(text: string): T {
       .trim();
 
     return JSON.parse(cleaned);
-  } catch (err) {
+  } catch {
     console.error("JSON parse failed:", text);
     throw new Error("Invalid JSON from AI");
   }

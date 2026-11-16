@@ -16,6 +16,12 @@ const KEYWORD_WEIGHTS: Record<string, number> = {
   cnn: 4,
   unet: 4,
   ann: 4,
+  thesis: 4,
+  deblurring: 4,
+  restoration: 3,
+  psnr: 3,
+  ssim: 3,
+  ffhq: 3,
 
   backend: 1,
   frontend: 1,
@@ -39,6 +45,7 @@ const TYPE_WEIGHT: Record<string, number> = {
   education: 1.1,
   contact: 0.8,
   "machine-learning": 1.3,
+  research: 1.5,
 };
 
 /**
@@ -60,6 +67,7 @@ const QUERY_MAP: Record<string, string[]> = {
   frontend: ["nextjs", "react", "ui"],
   "machine learning": ["cnn", "unet", "ann", "ai", "deep learning"],
   ml: ["cnn", "unet", "ann", "ai"],
+  thesis: ["research", "cnn", "unet", "deblurring", "restoration", "psnr", "ssim"],
 };
 
 /**
@@ -100,6 +108,15 @@ function detectIntent(query: string): string | null {
     q.includes("portfolio")
   ) {
     return "project";
+  }
+
+  if (
+    q.includes("thesis") ||
+    q.includes("research") ||
+    q.includes("deblur") ||
+    q.includes("restoration")
+  ) {
+    return "research";
   }
 
   if (q.includes("experience") || q.includes("work")) {
@@ -163,8 +180,9 @@ export function retrieveContext(query: string): string[] {
      * YEAR BOOST (IMPORTANT FIX FOR "recent")
      */
     const yearBoost =
-      // @ts-ignore
-      item.year && YEAR_WEIGHT[item.year] ? YEAR_WEIGHT[item.year] : 1;
+      "year" in item && typeof (item as { year?: string }).year === "string"
+        ? YEAR_WEIGHT[(item as { year: string }).year] ?? 1
+        : 1;
 
     /**
      * INTENT BOOST
